@@ -35,11 +35,11 @@ jobs:
           dotnet-version: '6.0'
           include-prerelease: True
       - name: Debian Build
-        run: ./Debian/package build
+        run: ./Debian/package
       - name: Generic Linux Build
-        run: ./Linux/package build
+        run: ./Linux/package
       - name: MacOS Build
-        run: ./MacOS/package build
+        run: ./MacOS/package
       - name: Automatic Pre-Release
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
