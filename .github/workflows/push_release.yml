@@ -2,7 +2,7 @@ name: Push-Release
 
 on:
   push:
-    branches: 
+    branches:
       - master
 jobs:
   unix:
@@ -12,11 +12,11 @@ jobs:
       - name: Checkout Packaging Repository
         uses: actions/checkout@v2
         with:
-          repository: 'OpenTabletDriver/OpenTabletDriver.Packaging'
+          repository: 'TylerSpears/OpenTabletDriver.Packaging'
       - name: Checkout OpenTabletDriver Repository
         uses: actions/checkout@v2
         with:
-          repository: 'OpenTabletDriver/OpenTabletDriver'
+          repository: 'TylerSpears/OpenTabletDriver'
           path: 'src/OpenTabletDriver'
       - name: Checkout OpenTabletDriver-udev Repository
         uses: actions/checkout@v2
