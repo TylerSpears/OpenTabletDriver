@@ -34,7 +34,8 @@ jobs:
           dotnet-version: '6.0'
           include-prerelease: True
       - name: .NET Restore
-        run: dotnet restore
+        run: |
+          dotnet restore "${GITHUB_WORKSPACE}/src/OpenTabletDriver/OpenTabletDriver.sln"
       - name: Debian Build
         run: ./Debian/package build
       - name: Generic Linux Build
