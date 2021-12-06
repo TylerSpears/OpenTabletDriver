@@ -43,6 +43,7 @@ jobs:
       - name: Automatic Pre-Release
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
+          repo_token: "${{ env.GITHUB_TOKEN }}"
           automatic_release_tag: "latest"
           prerelease: true
           title: "Development Build"
