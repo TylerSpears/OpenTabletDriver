@@ -48,8 +48,8 @@ jobs:
           prerelease: true
           title: "Development Build"
           files: |
-            "./Debian/OpenTabletDriver.deb"
-            "./Linux/OpenTabletDriver.linux-x64.tar.gz"
-            "./MacOS/OpenTabletDriver.osx-x64.tar.gz"
+            ./Debian/OpenTabletDriver.deb
+            ./Linux/OpenTabletDriver.linux-x64.tar.gz
+            ./MacOS/OpenTabletDriver.osx-x64.tar.gz
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
